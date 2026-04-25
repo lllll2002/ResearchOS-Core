@@ -1,0 +1,25 @@
+/* Research Noise Reduction — clean reading experience */
+
+/* Reduce visual clutter in reading mode */
+.markdown-preview-view .frontmatter-container {
+  display: none;
+}
+
+/* Subtle tag styling */
+.tag {
+  background-color: var(--background-modifier-hover);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.85em;
+}
+
+/* Table readability */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--background-modifier-hover);
+  font-weight: 600;
+}

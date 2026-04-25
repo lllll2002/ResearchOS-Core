@@ -1,0 +1,35 @@
+{
+  "deepseek_reason": {
+    "enabled": true,
+    "provider": "deepseek",
+    "api_base": "https://api.deepseek.com/v1/chat/completions",
+    "model": "deepseek-reasoner",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 4000
+  },
+  "qwen_reason": {
+    "enabled": true,
+    "provider": "ollama",
+    "api_base": "http://127.0.0.1:11434/api/generate",
+    "model": "qwen3:8b",
+    "temperature": 0.2,
+    "num_predict": 3000,
+    "num_ctx": 8192
+  },
+  "glm_review": {
+    "enabled": true,
+    "provider": "glm",
+    "api_base": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "model": "glm-5",
+    "api_key_env": "GLM_API_KEY",
+    "temperature": 0.1,
+    "max_tokens": 4000
+  },
+  "codex_stage": {
+    "enabled": true,
+    "provider": "openai-codex-bridge",
+    "runner": "scripts/multimodel/bridge_runner.py",
+    "mode": "bridge"
+  }
+}

@@ -1,0 +1,33 @@
+# Data & index (not tracked)
+data/
+workspace/
+
+# Python
+__pycache__/
+*__pycache__
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+.env
+
+# Tests & IDE
+tests/
+.pytest_cache/
+.vscode/
+
+# SQLite temp files
+*.db-journal
+
+# Logs (outside data/)
+*.log
+
+# Config with secrets
+config.local.yaml
+
+# Developer docs (not published)
+docs-dev/
+
+# Backups
+*.bak

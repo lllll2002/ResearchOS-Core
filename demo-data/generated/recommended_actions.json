@@ -1,0 +1,6 @@
+{
+  "generated_at": "2026-04-25T07:30:00",
+  "actions": [],
+  "summary": "No actions needed. All checks passed.",
+  "note": "This is a sample actions file. When issues are detected, this file lists repair suggestions with severity and commands."
+}

@@ -1,0 +1,44 @@
+schemas:
+  planning:
+    match:
+      - "01_Planning/*.md"
+    required: [title, tags, status, updated]
+    optional: [aliases, project, topic]
+    status_values: [seed, active, draft, reviewed, stale]
+
+  wiki_index:
+    match:
+      - "**/wiki/index.md"
+      - "**/wiki/README.md"
+    required: [title, status, updated]
+    optional: [type, project, topic]
+    status_values: [seed, active, draft, reviewed, stale]
+
+  claims_register:
+    match:
+      - "**/wiki/claims.md"
+    required: [title]
+    optional: [project, updated]
+    body_checks:
+      claim_id_pattern: "^## (C-\\d{3})"
+      required_claim_fields: [Status, Claim, Evidence basis]
+      valid_status:
+        - supported
+        - refuted
+        - mixed
+        - speculative
+        - open
+        - established
+        - contested
+        - partial
+        - planned
+        - blocked
+
+  system_doc:
+    match:
+      - "07_System_Optimization/*.md"
+      - "00_intro.md"
+      - "00_Overview/*.md"
+    required: [date]
+    optional: [title, tags, version]
+    status_values: []

@@ -1,0 +1,102 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+.python-version
+conda-meta/
+
+# ===== Local config / secrets =====
+config.yaml
+config.local.yaml
+.env
+.env.*
+*.secret
+*.key
+
+# ===== Runtime data (user-private) =====
+data/
+workspace/*
+!workspace/.gitkeep
+backups/
+logs/
+tmp/
+temp/
+
+# ===== Generated runtime status =====
+generated/
+
+# ===== Databases / indexes =====
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.index
+faiss.index
+faiss_ids.json
+
+# ===== Large model artifacts =====
+models/
+checkpoints/
+cache/
+.huggingface/
+ollama_models/
+*.bin
+*.safetensors
+
+# ===== Event / metric logs =====
+*.jsonl
+*.log
+
+# ===== Obsidian local state =====
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache/
+.obsidian/plugins/*/data.json
+
+# ===== OS noise =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== IDE =====
+.vscode/
+.idea/
+
+# ===== Node (if applicable) =====
+node_modules/
+package-lock.json
+
+# ===== User-private research assets =====
+**/manuscript_drafts/
+**/private_notes/
+**/claims_private/
+**/raw_data/
+**/*.nd2
+**/*.abf
+**/*.raw
+
+# ===== Backup / sync traces =====
+.git.private-backup/
+BaiduSyncdisk/
+sync_state/
+backup_state/
+*.bak
+
+# ===== Keep template and demo scaffolding =====
+!vault-template/
+!vault-template/**
+!demo-data/
+!demo-data/**
+.claude/settings.local.json
