@@ -183,7 +183,10 @@ def main() -> int:
 
     # 设置 API 配置
     api_base = "https://api.deepseek.com/v1/chat/completions"
-    api_key = "REDACTED_KEY"  # 用户提供的 API key
+    api_key = os.environ.get("DEEPSEEK_API_KEY", "")
+    if not api_key:
+        print("Error: DEEPSEEK_API_KEY environment variable not set")
+        sys.exit(1)
 
     if args.dry_run:
         print("干运行模式 - 不会实际调用 API")
