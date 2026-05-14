@@ -2,6 +2,8 @@
 
 ScholarAIO is a local literature engine for researchers: ingest PDFs, search by keyword or semantics, cluster topics, query citation graphs, and export BibTeX — all from one CLI. This repo is the share edition, providing the full engine, Obsidian vault templates, and operational scripts without any private data.
 
+> **Based on** [ScholarAIO](https://github.com/zimoliao/scholaraio) by [Zi-Mo Liao](https://zimoliao.github.io/), licensed under MIT. This repo extends the original with Claude Code skills, multi-model pipelines, and Obsidian vault integration.
+
 ## Why This Exists
 
 Researchers juggle scattered PDFs, disconnected notes, and one-off scripts. ScholarAIO turns a local paper collection into a searchable, analyzable knowledge base you can query in natural language — without uploading anything to the cloud.
