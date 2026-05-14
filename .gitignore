@@ -100,3 +100,18 @@ backup_state/
 !demo-data/
 !demo-data/**
 .claude/settings.local.json
+
+# Simulation results (large, user-specific)
+**/results/
+
+# Generated outputs (regenerable)
+**/generated/
+
+# Binary files
+*.exe
+*.pptx
+*.xlsx
+*.docx
+
+# Skills lock
+skills-lock.json
